@@ -14,14 +14,14 @@ on top.
 ## Command
 
 ```
-/personality <name|list|off>
+/personality-switcher:personality <name|list|off>
 ```
 
-- `/personality <name>` — switch to that personality (persists across sessions)
-- `/personality list` — show available personalities
-- `/personality off` — reset to default
+- `/personality-switcher:personality <name>` — switch to that personality (persists across sessions)
+- `/personality-switcher:personality list` — show available personalities
+- `/personality-switcher:personality off` — reset to default
 
-The choice is saved to `.claude/personality` and re-applied on each new session
+The choice is saved to `~/.claude/personality` and re-applied on each new session
 via a SessionStart hook.
 
 ## Personalities

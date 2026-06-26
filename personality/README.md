@@ -16,14 +16,14 @@ Add the marketplace and install the plugin:
 ## Command
 
 ```
-/personality <name|list|off>
+/personality-switcher:personality <name|list|off>
 ```
 
-- `/personality <name>` — switch to that personality (persists across sessions)
-- `/personality list` — show available personalities
-- `/personality off` — reset to default
+- `/personality-switcher:personality <name>` — switch to that personality (persists across sessions)
+- `/personality-switcher:personality list` — show available personalities
+- `/personality-switcher:personality off` — reset to default
 
-The choice is saved to `.claude/personality` and re-applied on each new session
+The choice is saved to `~/.claude/personality` and re-applied on each new session
 via a SessionStart hook.
 
 ## Personalities
@@ -48,7 +48,7 @@ Every personality is just an opening flavor — answers remain correct and compl
 ## Adding a personality
 
 Drop a new `<name>.md` file in [personalities/](personalities/) describing the
-voice. It shows up automatically in `/personality list`.
+voice. It shows up automatically in `/personality-switcher:personality list`.
 
 ## Structure
 

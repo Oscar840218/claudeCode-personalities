@@ -1,12 +1,11 @@
 ---
 description: "Switch Claude's response personality. Usage: /personality <name|list|off>"
-argument-hint: "<mean|nice|friend|foodie|pirate|robot|shakespeare|surfer|list|off>"
-allowed-tools: Bash(ls:*), Bash(sed:*)
+argument-hint: "<dog|foodie|friend|maid|mean|negative|nervous|nice|pirate|robot|shakespeare|surfer|list|off>"
 ---
 
 Available personalities:
 
-!`ls "${CLAUDE_PLUGIN_ROOT}/personalities" | sed 's/\.md$//'`
+dog, foodie, friend, maid, mean, negative, nervous, nice, pirate, robot, shakespeare, surfer
 
 The user requested personality: "$ARGUMENTS"
 

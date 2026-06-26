@@ -1,6 +1,6 @@
 {
   "name": "personality-switcher",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Switch Claude Code's response personality with /personality <name>. The choice persists across sessions via a SessionStart hook.",
   "author": {
     "name": "Oscar Chen"

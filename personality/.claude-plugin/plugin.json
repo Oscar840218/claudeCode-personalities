@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Switch Claude Code's response personality with /personality <name>. The choice persists across sessions via a SessionStart hook.",
   "author": {
-    "name": "claudeCode-personalities"
-  }
+    "name": "Oscar Chen"
+  },
+  "homepage": "https://github.com/Oscar840218/claudeCode-personalities"
 }

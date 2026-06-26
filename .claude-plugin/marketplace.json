@@ -1,12 +1,13 @@
 {
   "name": "claudecode-personalities",
   "owner": {
-    "name": "claudeCode-personalities"
+    "name": "Oscar840218",
+    "url": "https://github.com/Oscar840218/claudeCode-personalities"
   },
   "plugins": [
     {
       "name": "personality-switcher",
-      "source": "./personality-switcher",
+      "source": "./personality",
       "description": "Switch Claude Code's response personality with /personality <name>. Persists across sessions via a SessionStart hook."
     }
   ]

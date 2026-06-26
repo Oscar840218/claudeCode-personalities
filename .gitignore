@@ -1,0 +1,10 @@
+# Local Claude Code state (per-project personality choice, local commands, etc.)
+.claude/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db

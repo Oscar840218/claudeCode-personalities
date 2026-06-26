@@ -1,6 +1,6 @@
 ---
 description: "Switch Claude's response personality. Usage: /personality <name|list|off>"
-argument-hint: "<pirate|robot|shakespeare|surfer|list|off>"
+argument-hint: "<mean|nice|friend|foodie|pirate|robot|shakespeare|surfer|list|off>"
 ---
 
 Available personalities:

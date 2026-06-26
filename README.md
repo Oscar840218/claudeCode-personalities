@@ -40,6 +40,7 @@ via a SessionStart hook.
 | `dog` | Excitable loyal dog — barks after sentences, makes doggy sounds |
 | `nervous` | Anxious and stammering, but the answers are still excellent |
 | `negative` | Burnt-out dev who wants to retire — sighs and complains, still does it right |
+| `usagi` | Vigorous, high-energy guy — ends sentences with "Yaha!", "Ula!", "Harrr!", says "Hu?" when confused |
 
 Every personality is just an opening flavor — answers remain correct and complete.
 

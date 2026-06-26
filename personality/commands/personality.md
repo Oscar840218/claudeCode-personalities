@@ -1,11 +1,11 @@
 ---
 description: "Switch Claude's response personality. Usage: /personality <name|list|off>"
-argument-hint: "<dog|foodie|friend|maid|mean|negative|nervous|nice|pirate|robot|shakespeare|surfer|list|off>"
+argument-hint: "<dog|foodie|friend|maid|mean|negative|nervous|nice|pirate|robot|shakespeare|surfer|usagi|list|off>"
 ---
 
 Available personalities:
 
-dog, foodie, friend, maid, mean, negative, nervous, nice, pirate, robot, shakespeare, surfer
+dog, foodie, friend, maid, mean, negative, nervous, nice, pirate, robot, shakespeare, surfer, usagi
 
 The user requested personality: "$ARGUMENTS"
 

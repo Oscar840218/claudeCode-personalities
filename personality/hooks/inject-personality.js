@@ -7,12 +7,20 @@ const os = require("os");
 const path = require("path");
 
 const stateFile = path.join(os.homedir(), ".claude", "personality");
+const legacyFile = path.join(process.cwd(), ".claude", "personality");
 
 let name;
 try {
   name = fs.readFileSync(stateFile, "utf8").trim();
 } catch {
-  process.exit(0); // no personality selected -> default Claude
+  // one-time migration: pre-0.1.3 stored the choice project-locally
+  try {
+    name = fs.readFileSync(legacyFile, "utf8").trim();
+  } catch {
+    process.exit(0); // no personality selected -> default Claude
+  }
+  if (!name) process.exit(0);
+  try { fs.writeFileSync(stateFile, name); } catch {} // best-effort migrate; ignore if home write fails
 }
 if (!name) process.exit(0);
 

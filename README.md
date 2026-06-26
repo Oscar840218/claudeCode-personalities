@@ -4,6 +4,13 @@ Change the personality of Claude Code's responses. Pick a vibe and Claude keeps
 it across sessions — the technical answers stay correct, the tone is just flavor
 on top.
 
+## Install
+
+```
+/plugin marketplace add Oscar840218/claudeCode-personalities
+/plugin install personality-switcher
+```
+
 ## Command
 
 ```

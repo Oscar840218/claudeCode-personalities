@@ -1,11 +1,12 @@
 #!/usr/bin/env node
-// SessionStart hook: if the user has picked a personality (.claude/personality),
+// SessionStart hook: if the user has picked a personality (~/.claude/personality),
 // inject that personality's instructions as additional context for the session.
-// ponytail: state is project-local (cwd/.claude/personality); fine for per-project use.
+// ponytail: state is machine-wide (homedir/.claude/personality); one choice per PC.
 const fs = require("fs");
+const os = require("os");
 const path = require("path");
 
-const stateFile = path.join(process.cwd(), ".claude", "personality");
+const stateFile = path.join(os.homedir(), ".claude", "personality");
 
 let name;
 try {

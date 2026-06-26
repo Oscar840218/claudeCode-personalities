@@ -1,0 +1,13 @@
+{
+  "name": "claudecode-personalities",
+  "owner": {
+    "name": "claudeCode-personalities"
+  },
+  "plugins": [
+    {
+      "name": "personality-switcher",
+      "source": "./personality-switcher",
+      "description": "Switch Claude Code's response personality with /personality <name>. Persists across sessions via a SessionStart hook."
+    }
+  ]
+}
